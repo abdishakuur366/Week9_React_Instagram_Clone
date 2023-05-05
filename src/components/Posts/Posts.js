@@ -12,6 +12,9 @@ const Posts = (props) => {
     <div className='posts-container-wrapper'>
       {/* Map through the posts array returning a Post component at each iteration */}
       {/* Dulmar prop-ka 'posts', kadib soo celi 'Post' component, adigoo waxa ay 'Post' u baahantahay u diraayo. */}
+      {posts.map(post=>(
+        <Post key={post.id} post={post} />
+      ))}
 
     </div>
   );
